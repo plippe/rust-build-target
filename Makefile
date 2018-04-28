@@ -1,3 +1,5 @@
+.PHONY: build release
+.DEFAULT_GOAL := build
 
 DOCKER_IMAGE := plippe/rustc-target
 
