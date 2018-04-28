@@ -11,3 +11,11 @@ build-%:
 		--file dockerfiles/$*.dockerfile \
 		--tag $(DOCKER_IMAGE):$* \
 		.
+
+release:
+	$(MAKE) \
+		release-rustup \
+		release-gl-ar150 
+
+release-%:
+	docker push $(DOCKER_IMAGE):$*
