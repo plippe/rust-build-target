@@ -4,7 +4,7 @@
 
 FROM rust
 
-RUN rustup target add mipsel-unknown-linux-musl
+RUN rustup target add mips-unknown-linux-musl
 
 RUN mkdir -p /opt/openwrt_sdk/ && \
     cd /opt/openwrt_sdk/ && \
