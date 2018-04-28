@@ -5,7 +5,6 @@ DOCKER_IMAGE := plippe/rust-target
 
 build:
 	$(MAKE) \
-		build-rustup \
 		build-gl-ar150 
 
 build-%:
@@ -16,7 +15,6 @@ build-%:
 
 release:
 	$(MAKE) \
-		release-rustup \
 		release-gl-ar150 
 
 release-%:
