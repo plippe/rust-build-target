@@ -1,7 +1,7 @@
 .PHONY: build release
 .DEFAULT_GOAL := build
 
-DOCKER_IMAGE := plippe/rust-target
+DOCKER_IMAGE := plippe/rust-build-target
 
 build:
 	$(MAKE) \
